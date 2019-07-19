@@ -72,8 +72,8 @@ class PinLockAdapter(private val mContext: Context) : RecyclerView.Adapter<Recyc
 
             if (customizationOptions != null) {
                 holder.mNumberButton.setTextColor(customizationOptions!!.textColor)
-                if (customizationOptions!!.buttonBackgroundDrawable != null) {
-                    holder.mNumberButton.background = customizationOptions!!.buttonBackgroundDrawable
+                if (customizationOptions!!.buttonBackgroundDrawable?.constantState?.newDrawable() != null) {
+                    holder.mNumberButton.background = customizationOptions!!.buttonBackgroundDrawable?.constantState?.newDrawable()
                 }
                 holder.mNumberButton.setTextSize(TypedValue.COMPLEX_UNIT_PX,
                         customizationOptions!!.textSize.toFloat())
