@@ -1,4 +1,11 @@
 # PinLockView
+
+Note: This fork contains a few crucial updates and improvements on the original Android Library.
+
+1. Move to AndroidX (thanks to @cdiamon)
+2. Fixes [the Zero always "clicked" with selector drawable background](https://github.com/aritraroy/PinLockView/issues/53)
+3. Fixes a disappearing delete button after the first deletion
+
 A clean, minimalistic, easy-to-use and highly customizable pin lock custom view for Android.
 
 ### Specs
