@@ -181,15 +181,6 @@ class PinLockAdapter(private val mContext: Context) : RecyclerView.Adapter<Recyc
                                     .deleteButtonPressesColor)
                             rect = Rect(v.left, v.top, v.right, v.bottom)
                         }
-                        if (event.action == MotionEvent.ACTION_UP) {
-                            mButtonImage.clearColorFilter()
-                        }
-                        if (event.action == MotionEvent.ACTION_MOVE) {
-                            if (!rect!!.contains(v.left + event.x.toInt(),
-                                            v.top + event.y.toInt())) {
-                                mButtonImage.clearColorFilter()
-                            }
-                        }
                         return false
                     }
                 })
