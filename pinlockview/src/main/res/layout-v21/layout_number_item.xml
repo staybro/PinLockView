@@ -12,6 +12,6 @@
         android:layout_height="64dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
                  android:stateListAnimator="@null"
-            android:elevation="0dp"/>/>
+            android:elevation="0dp"/>
 
 </LinearLayout>
