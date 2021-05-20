@@ -10,6 +10,8 @@
         android:id="@+id/button"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+                 android:stateListAnimator="@null"
+            android:elevation="0dp"/>/>
 
 </LinearLayout>
